@@ -1,3 +1,5 @@
 from random import randint
 a=randint(1,5)
-print(a)
+b=3
+c=b+a
+print(c)
