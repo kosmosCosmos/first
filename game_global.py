@@ -1,7 +1,10 @@
-times=[3,5,11]
-total_times=times[0]
-win_times=times[1]
-max_times=times[2]
+f=open('data.txt')
+times=f.read().split()
+f.close()
+print(times)
+total_times=int(times[0])
+win_times=int(times[1])
+avg_times=int(times[2])
 if total_times==0:
 	print()
 else:

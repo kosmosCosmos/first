@@ -44,8 +44,8 @@ while scores[0]==scores[1]:
 compare()
 print(scores)
 game_global.total_times=game_global.total_times+1
-game_global.times[0]=game_global.total_times
-game_global.times[1]=game_global.win_times
-game_global.times[2]=game_global.max_times
-print(game_global.times)
+result = '%d %d %d' % (game_global.win_times, game_global.win_times, game_global.avg_times)
+f=open('data.txt','a')
+f.write(result)
+f.close()
 print('game over')
