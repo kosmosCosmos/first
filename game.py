@@ -4,11 +4,7 @@ import game_global
 
 scores=[0,0]
 count=0
-if game_global.total_times==0:
-	print()
-else:
-	avg_times=float(game_global.win_times)/game_global.total_times
-	print('你已经玩了%d次，赢了%d次，平均%.2f次赢一次')
+print('你已经玩了%d次，赢了%d次，平均%.2f次赢一次'%(game_global.total_times,game_global.win_times,game_global.avg_times))
 def game():
 	print('you choose what')
 	print('1,2,3')
@@ -48,6 +44,8 @@ while scores[0]==scores[1]:
 compare()
 print(scores)
 game_global.total_times=game_global.total_times+1
-print(game_global.total_times)
-print(game_global.win_times)
+game_global.times[0]=game_global.total_times
+game_global.times[1]=game_global.win_times
+game_global.times[2]=game_global.max_times
+print(game_global.times)
 print('game over')
