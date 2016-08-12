@@ -1,4 +1,13 @@
 f=open('data.txt')
+data=f.read()
+f.close()
+if len(data)==0:
+	f=open('data.txt','w')
+	f.write('0 0 0')
+	f.close()
+else:
+	print()
+f=open('data.txt')
 times=f.read().split()
 f.close()
 print(times)
