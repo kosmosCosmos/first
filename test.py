@@ -1,3 +1,1 @@
-f=open('data.txt')
-data=f.read()
-print(len(data))
+l=[1,2,3]
